@@ -7,6 +7,12 @@ wget -O subspace-node https://github.com/subspace/subspace/releases/download/gem
 wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/gemini-3g-2023-oct-31/subspace-farmer-ubuntu-x86_64-skylake-gemini-3g-2023-oct-31
 cp subspace-* /usr/local/bin/
 
+#restart node and farmer 
+systemctl restart subspace-noded 
+sleep 2
+systemctl restart subspace-farmerd
+sleep 2
+
 #check node and farm working correctly 
 if systemctl is-active --quiet subspace-noded.service; then
   # If the service is active, print success message in green color
@@ -22,4 +28,3 @@ echo "to check node log"
 echo "journalctl -u subspace-farmerd -f --no-hostname | ccze -A"
 echo "to check farmer log"
 echo "#######################################################"
-

@@ -18,5 +18,8 @@ fi
 sleep 3
 echo "#######################################################"
 echo "journalctl -u subspace-noded -f --no-hostname | ccze -A"
-echo "to check log"
+echo "to check node log"
+echo "journalctl -u subspace-farmerd -f --no-hostname | ccze -A"
+echo "to check farmer log"
 echo "#######################################################"
+

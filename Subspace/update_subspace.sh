@@ -1,5 +1,5 @@
 #!/bin/bash
-sytemctl stop subspace-farmerd
+systemctl stop subspace-farmerd
 systemctl stop subspace-noded 
 rm /usr/local/bin/subspace-*
 cd $HOME/subspace

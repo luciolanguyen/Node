@@ -5,7 +5,10 @@ rm /usr/local/bin/subspace-*
 cd $HOME/subspace
 wget -O subspace-node https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-03/subspace-node-ubuntu-x86_64-skylake-gemini-3g-2023-nov-03
 wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/gemini-3g-2023-nov-03/subspace-farmer-ubuntu-x86_64-skylake-gemini-3g-2023-nov-03
+<<<<<<< HEAD
 chmod a+x subspace-*
+=======
+>>>>>>> 52451c57a74b26c390ab8d74b33b4c76d172ee56
 cp subspace-* /usr/local/bin/
 
 #restart node and farmer 

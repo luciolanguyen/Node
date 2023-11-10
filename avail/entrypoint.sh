@@ -23,7 +23,7 @@ fi
 
 echo "Launching node ${DA_NAME} on chain ${DA_CHAIN}..."
 ${da_bin} \
-	--validator \
+    --validator \
         --base-path /da/state \
         --keystore-path ${da_keystore} \
         --offchain-worker=Always \

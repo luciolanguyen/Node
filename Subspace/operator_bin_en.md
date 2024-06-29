@@ -74,10 +74,12 @@ wget -O subspace-node https://github.com/subspace/subspace/releases/download/gem
 chmod a+x subspace-*
 mv subspace-* /usr/local/bin/
 ```
-### Generate Domainkey
+### Generate Domain key
 ```bash
 subspace-node domain key create --base-path /root/subspace/ --domain-id 0
 ```
+<img width="1310" alt="Screenshot 2024-06-29 at 10 25 40" src="https://github.com/luciolanguyen/Node/assets/105598260/6bc0e093-0194-4914-af4e-6da70a7faedc">
+Save your seed for regitering operator. 
 
 ### Register your operator 
 [Link](https://explorer.subspace.network/gemini-3h/staking/register).
